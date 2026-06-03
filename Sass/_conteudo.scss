@@ -1,0 +1,16 @@
+@use "variaveis";
+@use "mixins";
+
+.botao {
+
+    @include mixins.botao-base;
+
+    &--primario {
+        background-color: variaveis.$cor-primaria;
+        color: white;
+    }
+
+    &--primario:hover {
+        opacity: 0.9;
+    }
+}

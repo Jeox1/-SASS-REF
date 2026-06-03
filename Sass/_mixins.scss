@@ -1,0 +1,14 @@
+@use "variaveis";
+
+@mixin espacamento-padrao {
+    padding: variaveis.$espacamento-padrao;
+}
+
+@mixin botao-base {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}

@@ -1,0 +1,24 @@
+@use "variaveis";
+@use "mixins";
+
+.cabecalho {
+    background-color: variaveis.$cor-primaria;
+    color: white;
+
+    @include mixins.espacamento-padrao;
+
+    &__titulo {
+        text-align: center;
+    }
+}
+
+.conteudo {
+    padding: variaveis.$espacamento-padrao;
+
+    &__paragrafo {
+        font-size: 18px;
+
+        // uso de operador
+        margin-bottom: variaveis.$espacamento-metade;
+    }
+}
