@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../Sass/_cabecalho.scss","../Sass/_variaveis.scss","../Sass/_mixins.scss","../Sass/_conteudo.scss"],"names":[],"mappings":"AAGA;EACI,kBCJW;EDKX;EEFA,SDIiB;;ADEjB;EACI;;;AAIR;EACI,SCRiB;;ADUjB;EACI;EAGA,eCXa;;;AEPrB;EDII;EACA;EACA;EACA;EACA;EACA;;ACLA;EACI,kBFRO;EESP;;AAEA;EACI","file":"estilos.css"}
