@@ -1,0 +1,37 @@
+
+name: Compilar Sass
+
+on:
+  push:
+    paths:
+      - 'Sass/**'
+      - 'package.json'
+      - '.github/workflows/compilar-sass.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  compilar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Instalar Sass
+        run: npm install
+
+      - name: Compilar CSS
+        run: npm run build-css
+
+      - name: Salvar CSS compilado
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Compila Sass e atualiza CSS"
+          file_pattern: CSS/estilos.css CSS/estilos.css.map
