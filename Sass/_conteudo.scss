@@ -8,9 +8,9 @@
     &--primario {
         background-color: variaveis.$cor-primaria;
         color: white;
-    }
 
-    &--primario:hover {
-        opacity: 0.9;
+        &:hover {
+            opacity: 0.9;
+        }
     }
 }
