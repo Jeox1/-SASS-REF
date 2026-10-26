@@ -1,0 +1,12 @@
+
+{
+  "name": "sass-ref",
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "sass": "1.93.2"
+  },
+  "scripts": {
+    "build-css": "sass Sass/estilos.scss CSS/estilos.css"
+  }
+}
